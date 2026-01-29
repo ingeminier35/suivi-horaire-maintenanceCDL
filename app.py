@@ -76,7 +76,7 @@ if st.session_state.user is None:
     with col_login:
         st.title("👋 Bonjour")
         st.write("Veuillez choisir votre profil.")
-        liste_personnel = ["-- Choisir --", "Mélanie BOUVIER", "Christiant GEORGEAULT", "Aurélien LOUAPRE", "Ludovic VETTIER", "Ludovic BELINE", "Régis ANGER", "Clément MARTINEZ", "Richard LEBRUN", "Guillaume TREFOUEL"]
+        liste_personnel = ["-- Choisir --", "Daniel SIMON", "Mélanie BOUVIER", "Christian GEORGEAULT", "Aurélien LOUAPRE", "Ludovic VETTIER", "Ludovic BELINE", "Régis ANGER", "Clément MARTINEZ", "Richard LEBRUN", "Guillaume TREFOUEL"]
         choix = st.selectbox("Qui êtes-vous ?", liste_personnel)
         if st.button("VALIDER", use_container_width=True):
             if choix != "-- Choisir --":
@@ -190,4 +190,5 @@ else:
         sauvegarder_donnees(df_global)
         st.success("✅ Semaine sauvegardée !")
         time.sleep(1)
+
         st.rerun()
